@@ -56,3 +56,15 @@ const arr3 = [10, 22, 5, 80];
 const k=6;
 
 console.log("maxProfit",maxProfit(k,arr))
+
+var maxProfit2 = function(prices) {
+    let n = prices.length;
+    let result = 0 ;
+    for(let i=0 ;i<n ;i++){
+        if(prices[i]>prices[i-1])
+        result  += prices[i]-prices[i-1];
+    }
+    return result ;
+};
+
+console.log("maxProfit2",maxProfit2(arr))
