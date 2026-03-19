@@ -27,3 +27,26 @@ const sum_target = (arr,target) =>{
 let nums = [6,2,7,11,15]; 
 let target = 9 ;
 console.log(sum_target(nums,target).join(" "));
+
+
+const two_sum_pointer = (arr,target)=>{
+    const n = arr.length;
+    let left = 0;
+    let right = n-1;
+    arr.sort((a, b) => a - b);
+    while(left<right){
+        let mid = arr[left]+arr[right];
+        if(mid==target){
+            return true;
+        }
+        else if (mid<target){
+            left++;
+        }
+        else{
+            right--;
+        }
+    }
+    return false
+}
+
+console.log(two_sum_pointer([0, -1, 2, -3, 1],-2))
