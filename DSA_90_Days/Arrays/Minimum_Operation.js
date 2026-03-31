@@ -1,4 +1,5 @@
-// You are given an array of n-elements, you have to find the number of operations needed to make all elements of array equal. Where a single operation can increment an element by k. 
+// You are given an array of n-elements, you have to find the number of operations needed to make all elements of array equal.
+//  Where a single operation can increment an element by k. 
 // If it is not possible to make all elements equal print -1.
 
 
