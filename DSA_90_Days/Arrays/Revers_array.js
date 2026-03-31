@@ -15,3 +15,13 @@ const Reverse = ( arr ) => {
 
 const arr = [10, 20, 30, 40, 50] ;
 console.log(Reverse(arr));
+
+const Reverse_array =(arr,left=0,right= arr.length-1)=>{
+    
+    if(left>=right){
+        return arr;
+    }
+    [arr[left],arr[right]]=[arr[right],arr[left]]
+    return Reverse_array(arr,left+1,right-1);
+}
+console.log(Reverse_array(arr));
