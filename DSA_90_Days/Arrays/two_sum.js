@@ -50,3 +50,15 @@ const two_sum_pointer = (arr,target)=>{
 }
 
 console.log(two_sum_pointer([0, -1, 2, -3, 1],-2))
+
+
+const two_sum=(arr,target)=>{
+    let n =arr.length;
+    let left=0;
+    let right=n-1;
+    arr=arr.sort((a,b)=>b-a); //decresing order
+    return arr ;
+
+}
+
+console.log(two_sum([0, -1, 2, -3, 1],-2),"jush")

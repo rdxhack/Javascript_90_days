@@ -12,3 +12,5 @@ function rotateRight(arr, d) {
 }
 
 console.log("result",rotateRight([1,2,3,4,5,6], 2)); //LEFT ROTATION
+
+
