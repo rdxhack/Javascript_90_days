@@ -68,3 +68,15 @@ var maxProfit2 = function(prices) {
 };
 
 console.log("maxProfit2",maxProfit2(arr))
+
+
+const stocks=(arr)=>{
+    let n= arr.length;
+    let Profits =0;
+    for(let i=0;i<n;i++){
+        if(arr[i]>arr[i-1]){Profits+=arr[i]-arr[i-1]}
+    }
+    return Profits;
+}
+
+console.log("stocks",stocks(arr))
